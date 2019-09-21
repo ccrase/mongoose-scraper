@@ -8,7 +8,7 @@ $(document).on("click", ".card", function(){
         url: "/articles/" + articleId
     }).then(function(data){
         $("#notes").append("<h3 class='note-title'>Notes</h3><hr>");
-        // $("#notes").append("<p class='article-ref'>" + data.title + "</p>")
+        $("#notes").append("<p class='article-ref'>" + data.title + "</p>")
         $("#notes").append(`<input id="titleinput" class="form-control shadow" name="title" placeholder="Title">`);
         $("#notes").append(`<textarea id="bodyinput" class="form-control shadow" name="body" rows="5" placeholder="Message"></textarea>`);
         $("#notes").append("<button data-id='" + data._id + "' class='btn btn-dark' id='savenote' type='button'>Save</button>");
