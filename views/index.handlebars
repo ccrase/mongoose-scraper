@@ -1,2 +1,35 @@
-      <h1>Hello, World!</h1>
-      <h3>Let's scrape some articles</h3>
+ 
+<div class="container">
+      {{!-- <div class="heading">
+            <h1 id="logo">EYE ON DESIGN</h1>         
+      </div> --}}
+  <div class="row">
+        <div class="col-8 articles overflow-auto">
+            <h1 id="logo">EYE FOR DESIGN</h1>
+            {{#each articles}}
+            <div class="card shadow" data-id={{this._id}}>
+               <div class="card-body">
+                  <h4 class="article-title" data-id={{this._id}}>{{this.title}}</h4>
+                  <a class="btn btn-light article-category">{{this.category}}</a>
+                        <div class="row">
+                              <div class="col-8">
+                                    <p class="article-details">{{this.text}}</p>
+                              </div>
+                              <div class="col-4"> 
+                                    <a href={{this.link}}rel="noopener noreferrer" target="_blank" class="btn btn-dark article-btn">read article</a>
+                              </div>
+                        </div>
+               </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="col-4">
+              <div id="notes" class="form-group">
+              </div>
+        </div>
+  </div>
+</div>  
+<!-- Optional JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+

@@ -11,6 +11,14 @@ var articleSchema = new Schema({
         type: String,
         required: true
     },
+    category:{
+        type: String,
+        required: true,
+    },
+    text:{
+        type: String,
+        required: true
+    },
     //look up reference for note !!!!!
     note:{
         type: Schema.Types.ObjectId,

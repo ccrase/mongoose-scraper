@@ -1,0 +1,100 @@
+body{
+    background-image: url("images/tear.jpg");
+    background-position: center;
+    background-size: 500px;
+}
+.heading{
+    /* font-family: 'Arimo', sans-serif; */
+    text-align: center;
+    padding: 2px;
+    border-bottom: 1px solid #F299B1;
+}
+#logo{
+    text-align: center;
+    font-family: 'Arimo', sans-serif;
+    text-shadow: 2px 2px #F28F38;
+    /* font-family: 'Ewert', cursive; */
+    font-size: 54px;
+    color: #5550F2;
+    text-transform: uppercase;
+}
+.container{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #F2F2F2;
+    /* background-color: rgb(167, 44, 62, 0.7); */
+    height: 870px;
+}
+.card{
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: #F2F2F2;
+}
+.articles{
+    overflow: scroll;
+    display: inline-block;
+    height: 850px;
+}
+.article-title{
+    font-family: 'Arimo', sans-serif;
+    color:#F23C13;
+}
+.article-category{
+    background-color: #F2798F;
+    color: white !important;
+    font-size: 12px;
+    text-align: center;
+    border: none;
+    padding: 2px 4px 2px 4px;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+.article-category:hover{
+    background-color: #F2798F;
+}
+.article-details{
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: 'Markazi Text', serif;
+}
+.form-group{
+    margin-top: 100px;
+    text-align: center;
+    display: block;
+}
+.note-title{
+    /* font-family: 'Ewert', cursive; */
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    color: #5550F2;
+    text-shadow: 1px 1px #F28F38;
+    text-transform: uppercase;
+}
+.article-ref{
+    font-size: 16px;   
+    font-family: 'Arimo', sans-serif;
+    font-weight: 500;
+    color:#F23C13;
+}
+textarea{
+    margin-top: 2px;
+}
+#savenote{
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+.article-btn{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    float: right;
+}
+
+@media only screen and (max-width: 990px) {
+    .article-btn {
+    
+    }
+  }
