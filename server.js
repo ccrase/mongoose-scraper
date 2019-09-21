@@ -18,7 +18,8 @@ app.set("view engine", "handlebars");
 app.use(express.static('public'));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/eyeondesignscraper", { useNewUrlParser: true });
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/eyeondesignscraper";
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 // A GET route for scraping the echoJS website
 app.get("/scrape", function(req, res) {
